@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{text-align:center;
+    background-color:#F1AD88;
+padding:40px;}
+
+    h1{font-size: 50px;
+    color: #793937;
+    border: 1px solid #FC766A;
+    border-width: 5px;
+border-radius: 10px;}
+
+    h2{color: #793937;
+    font-size: 40px;}
+
+    p{text-align: left;}
+    
+
+    ul{color: #FC766A;
+    font-weight: bolder;
+list-style:none;
+font-size: 20px;
+text-align: left;}
+
+button{font-size: 19px;
+    font-weight: bolder;
+    border-color:#FC766A;
+    border-radius: 20px;
+    border-width: 2px;
+    background-color:#F1AD88;
+color:#793937;
+padding:0 auto;
+transition: ease-in-out;}
+
+button :hover{color:#FC766A;
+background-color:#F1AD88;
+border-color:#ac6260;}
+
+a{color: #793937;}
+
+.book{text-align: left;}
+
+
+
+
+
+</style>
+<body>
+    <h1> 
+    <em>
+        Running
+
+    </em>
+    
+    </h1>
+
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/377/original/images.jpg?1673478512" />
+
+    <h2>
+        <em>
+            Benefits of Running
+        </em>
+       
+    </h2>
+
+    <p>
+        I love running, it improves my mental state and I feel more energised the morning after. 
+        But that is my feels, it goes beyond that. Actually, science has his word on that.
+        Here are the top five benefits of running : 
+    </p>
+
+    <ul>
+        <strong> 
+    <em>
+        <li> Improves cardiovascular health </li>
+        <li> Builds muscular strenght </li>
+        <li> Reduces stress </li>
+        <li> Burns calories </li>
+        <li> Is accessible ( Cheaper )</li>
+    </em>
+        </strong>
+       
+    </ul> 
+
+    <br/>
+
+    <div class="book">Here are some books that may guide you on your journey</div>
+
+    <br/>
+
+    <button>
+        <em>
+            Buy a book
+        </em>
+        
+    </button>
+
+    
+    
+    <hr/>
+
+    <br />
+
+    <p class="source">Source : 
+        <strong><a href="https://www.themanual.com/fitness/benefits-of-running/">The Manual</a></strong>
+    </p>
+   
+<script>
+
+    function askEmail() { prompt("What is your e-mail adress?") }
+
+
+    function updateHeading(newHeading) {
+        let heading = document.querySelector("h1")
+        heading.innerHTML = newHeading
+    }
+
+    function askInfo(){
+            let name = prompt("What is your name?")
+            let age = prompt("What is your age ?")
+            if (age < 18) {
+                updateHeading("You can't buy a book " + name+" !")
+
+            } else {
+                askEmail; updateHeading("Thank you " + name + "!")
+
+            }
+}
+
+
+let buyButton= document.querySelector("button")
+buyButton.addEventListener("click", askInfo)
+ 
+    
+
+
+
+</script>
+</body>
+
+<p> coded by Cici Dushime </p>
+
+</html>
